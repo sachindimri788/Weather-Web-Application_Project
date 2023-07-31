@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .box {
+            width: 500px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-40%, -50%);
+            padding: 40px;
+            background: rgb(0, 0, 0, 0.8);
+            border-radius: 10px;
+        }
+    </style>
+
+
+</head>
+<body>
+<div class="box">
+    <form action="/register" method="post">
+        <input type="text" placeholder="first name" name="firstname" style="width:100%; text-align: center;"><br>
+        <input type="text" placeholder="last name" name="lastname" style="width:100%; text-align: center;"><br>
+        <input type="email" placeholder="your email" name="email" style="width:100%; text-align: center;"><br>
+        <input type="tel" placeholder="your phone" name="phone" style="width:100%; text-align: center;"><br>
+        <input type="number" placeholder="age" name="age" style="width:100%; text-align: center;"><br>
+        <input type="password" placeholder="password" name="password" style="width:100%; text-align: center;"><br>
+
+        <input type="password" placeholder="confirm password" name="confirmpassword" style="width:100%; text-align: center;"><br>
+        <input type="radio" name="gender" value="male" > <span style="color:#fff ;"> Male </span> <br>
+        <input type="radio" name="gender" value="female"> <span style="color:#fff ;"> Female </span> <br>
+        <input type="submit" >
+    </form>
+    <%-include('partials/nav1')-%>
+</div>    
+    
+</body>
+</html>
